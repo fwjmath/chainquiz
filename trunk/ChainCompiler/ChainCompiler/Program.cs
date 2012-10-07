@@ -63,7 +63,7 @@ namespace ChainCompiler
 
                 while (currentLine != "<<<")
                 {
-                    quizQuestion += currentLine + "\n";
+                    quizQuestion += currentLine + "\r\n";
                     currentLine = sr.ReadLine();
                 }
 
