@@ -50,6 +50,7 @@ namespace ChainQuiz
 
         public void listBoxQuizName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btnStart.Enabled = true;
             StreamReader quizInfo = new StreamReader("quiz\\" + fileList[listBoxQuizName.SelectedIndex].Name, encoding);
             labelQuizName.Text = quizInfo.ReadLine();
             labelQuizDesc.Text = (quizInfo.ReadLine()).Replace("\\n", "\n");
